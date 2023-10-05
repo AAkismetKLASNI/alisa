@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="scripts/gsap.min.js" defer></script>
+    <script src="scripts/Draggable.min.js" defer></script>
+    <script src="scripts/InertiaPlugin.min.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/audio.js"></script>
+
+    <style>
+      .gallery {
+        opacity: 0;
+      }
+    </style>
+
+    <title>алиса я лю тя</title>
+  </head>
+  <body>
+    <header class="header">alisa i tebya lyblyy <span>грузеееет!</span></header>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img class="img-1" src="img/1.jpg" onclick="playAudio1()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-2" src="img/2.jpg" onclick="playAudio2()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-3" src="img/3.jpg" onclick="playAudio3()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-4" src="img/4.jpg" onclick="playAudio4()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-5" src="img/5.jpg" onclick="playAudio5()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-6" src="img/6.jpg" onclick="playAudio6()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-7" src="img/7.jpg" onclick="playAudio7()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-8" src="img/8.jpg" onclick="playAudio8()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-9" src="img/9.jpg" onclick="playAudio9()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-10" src="img/10.jpg" onclick="playAudio10()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-11" src="img/11.jpg" onclick="playAudio11()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-12" src="img/12.jpg" onclick="playAudio12()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-13" src="img/13.jpg" onclick="playAudio13()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-14" src="img/14.jpg" onclick="playAudio14()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-15" src="img/15.jpg" onclick="playAudio15()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-16" src="img/16.jpg" onclick="playAudio16()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-17" src="img/17.jpg" onclick="playAudio17()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-18" src="img/18.jpg" onclick="playAudio18()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-19" src="img/19.jpg" onclick="playAudio19()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-20" src="img/20.jpg" onclick="playAudio20()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-1" src="img/1.jpg" onclick="playAudio1()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-2" src="img/2.jpg" onclick="playAudio2()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-3" src="img/3.jpg" onclick="playAudio3()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-4" src="img/4.jpg" onclick="playAudio4()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-5" src="img/5.jpg" onclick="playAudio5()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-6" src="img/6.jpg" onclick="playAudio6()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-7" src="img/7.jpg" onclick="playAudio7()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-8" src="img/8.jpg" onclick="playAudio8()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-9" src="img/9.jpg" onclick="playAudio9()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-10" src="img/10.jpg" onclick="playAudio10()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-11" src="img/11.jpg" onclick="playAudio11()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-12" src="img/12.jpg" onclick="playAudio12()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-13" src="img/13.jpg" onclick="playAudio13()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-14" src="img/14.jpg" onclick="playAudio14()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-15" src="img/15.jpg" onclick="playAudio15()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-16" src="img/16.jpg" onclick="playAudio16()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-17" src="img/17.jpg" onclick="playAudio17()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-18" src="img/18.jpg" onclick="playAudio18()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-19" src="img/19.jpg" onclick="playAudio19()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-20" src="img/20.jpg" onclick="playAudio20()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-1" src="img/1.jpg" onclick="playAudio1()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-2" src="img/2.jpg" onclick="playAudio2()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-3" src="img/3.jpg" onclick="playAudio3()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-4" src="img/4.jpg" onclick="playAudio4()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-5" src="img/5.jpg" onclick="playAudio5()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-6" src="img/6.jpg" onclick="playAudio6()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-7" src="img/7.jpg" onclick="playAudio7()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-8" src="img/8.jpg" onclick="playAudio8()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-9" src="img/9.jpg" onclick="playAudio9()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-10" src="img/10.jpg" onclick="playAudio10()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-11" src="img/11.jpg" onclick="playAudio11()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-12" src="img/12.jpg" onclick="playAudio12()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-13" src="img/13.jpg" onclick="playAudio13()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-14" src="img/14.jpg" onclick="playAudio14()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-15" src="img/15.jpg" onclick="playAudio15()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-16" src="img/16.jpg" onclick="playAudio16()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-17" src="img/17.jpg" onclick="playAudio17()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-18" src="img/18.jpg" onclick="playAudio18()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-19" src="img/19.jpg" onclick="playAudio19()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-20" src="img/20.jpg" onclick="playAudio20()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-1" src="img/1.jpg" onclick="playAudio1()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-2" src="img/2.jpg" onclick="playAudio2()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-3" src="img/3.jpg" onclick="playAudio3()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-4" src="img/4.jpg" onclick="playAudio4()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-5" src="img/5.jpg" onclick="playAudio5()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-6" src="img/6.jpg" onclick="playAudio6()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-7" src="img/7.jpg" onclick="playAudio7()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-8" src="img/8.jpg" onclick="playAudio8()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-9" src="img/9.jpg" onclick="playAudio9()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-10" src="img/10.jpg" onclick="playAudio10()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-11" src="img/11.jpg" onclick="playAudio11()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-12" src="img/12.jpg" onclick="playAudio12()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-13" src="img/13.jpg" onclick="playAudio13()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-14" src="img/14.jpg" onclick="playAudio14()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-15" src="img/15.jpg" onclick="playAudio15()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-16" src="img/16.jpg" onclick="playAudio16()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-17" src="img/17.jpg" onclick="playAudio17()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-18" src="img/18.jpg" onclick="playAudio18()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-19" src="img/19.jpg" onclick="playAudio19()" alt="" />
+      </div>
+      <div class="gallery-item">
+        <img class="img-20" src="img/20.jpg" onclick="playAudio20()" alt="" />
+      </div>
+    </div>
+    <div class="audio">
+      <div class="audio-target">
+        <audio src="audio/au-1.ogg" id="au-1"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-2.ogg" id="au-2"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-3.ogg" id="au-3"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-4.ogg" id="au-4"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-5.ogg" id="au-5"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-6.ogg" id="au-6"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-7.ogg" id="au-7"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-8.ogg" id="au-8"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-9.ogg" id="au-9"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-10.ogg" id="au-10"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-11.ogg" id="au-11"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-12.ogg" id="au-12"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-13.ogg" id="au-13"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-14.ogg" id="au-14"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-15.ogg" id="au-15"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-16.ogg" id="au-16"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-17.ogg" id="au-17"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-18.ogg" id="au-18"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-19.ogg" id="au-19"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-20.ogg" id="au-20"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-21.ogg" id="au-21"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-22.ogg" id="au-22"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-23.ogg" id="au-23"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-24.ogg" id="au-24"></audio>
+      </div>
+      <div class="audio-target">
+        <audio src="audio/au-25.ogg" id="au-25"></audio>
+      </div>
+    </div>
+  </body>
+</html>
